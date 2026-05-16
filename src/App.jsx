@@ -16,9 +16,9 @@ import duckImg     from './assets/animals/duck.png';
 
 // Label colors cycling for animal name badges
 const LABEL_COLORS = [
-  "#E63946", "#3A86FF", "#FF9F1C", "#6A0DAD",
-  "#2DC653", "#E63946", "#2DC653", "#6A0DAD",
-  "#E63946", "#3A86FF", "#FF9F1C", "#2DC653"
+  "#3A86FF", "#3A86FF", "#3A86FF", "#3A86FF",
+  "#3A86FF", "#3A86FF", "#3A86FF", "#3A86FF",
+  "#3A86FF", "#3A86FF", "#3A86FF", "#3A86FF"
 ];
 
 const CATEGORIES = {
@@ -37,7 +37,7 @@ const CATEGORIES = {
       { id: "sheep",    name: "Sheep",   image: sheepImg,    sound: "/sounds/sheep.mp3" },
       { id: "horse",    name: "Horse",   image: horseImg,    sound: "/sounds/horse.mp3" },
       { id: "pig",      name: "Pig",     image: pigImg,      sound: "/sounds/pig.mp3" },
-      { id: "rooster",  name: "Chicken", image: roosterImg,  sound: "/sounds/rooster.mp3" },
+      { id: "rooster",  name: "Rooster", image: roosterImg,  sound: "/sounds/rooster.mp3" },
       { id: "duck",     name: "Duck",    image: duckImg,     sound: "/sounds/duck.mp3" },
     ],
   },
@@ -207,9 +207,6 @@ export default function App() {
             <div className="animals-sound-icon">🔊</div>
           </div>
 
-          <div className="animals-hint">
-            🔊 Tap an animal to see its name and hear its sound
-          </div>
 
           <div className="animals-grid">
             {cat.items.map((item, index) => (
